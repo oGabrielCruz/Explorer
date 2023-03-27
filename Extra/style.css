@@ -1,0 +1,37 @@
+body{
+    overflow: hidden;
+    text-align: center;
+    color: #3F3D56;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    text-shadow: black 1px 7px 20px;
+}
+span{
+    color: #EE24FF;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: #828282;
+    font-size: 18px;
+}
+strong{
+    font-size: larger;
+    color: #3F3D56;
+}
+#linha{
+    width: 569px;
+    height: 0px;
+    border: 1px solid #eceff2;
+    margin: 0px auto 8px;
+}
+a{
+    color: #3F3D56;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-size: larger;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+}
