@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+}
+
+.page{
+    width: 1000px;
+    margin: 65px auto 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+}
