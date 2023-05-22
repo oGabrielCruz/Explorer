@@ -3,8 +3,45 @@ h1{
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
+    color: white;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #42d3ff;
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 368px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background:#121214 ;
+}
+
+.page{
+    width: 736px;
+    margin: 0 auto;
+}
+
+header{
+    margin-top: 74px;
+    width: 319px;
+}
+
+form{
+    margin-top: 38px;
+    background: #fafafc60;
+    border-radius: 8px;
+    min-height: 300px;
 }
