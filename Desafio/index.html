@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +14,37 @@
     <title>Document</title>
 </head>
 <body>
-    <p>aaaaaaaaaaaaa</p>
+    <div class="page">
+
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para <br> agendar a sua mentoria</p>
+        </header>
+
+        <form>
+            <legend>Informações Pessoais</legend>
+            <fieldset>
+                <div class="info-pessoas">
+                    <label for="nome-pessoa">Nome</label>
+                    <input type="text" id="nome-pessoa">
+                </div>
+
+                <div class="info-pessoas">
+                    <label for="sobrenome-pessoa">Sobrenome</label>
+                    <input type="text" id="sobrenome-pessoa">
+                </div>
+
+                <div class="info-pessoas">
+                    <label for="email-pessoa">Email</label>
+                    <input type="email" id="email-pessoa">
+                </div>
+
+                <div class="info-pessoas">
+                    <label for="senha-pessoa">Senha</label>
+                    <input type="password" id="senha-pessoa">
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
