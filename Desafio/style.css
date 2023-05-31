@@ -1,0 +1,11 @@
+body::before{
+    content: '';/*Para o background pegar*/
+    Width:1440px;
+    height:436px;
+    top: 0px;
+    left: 0px;/*Top e Left é para tirar as "margins"*/
+    z-index: -1;/*Para aparecer os elementos*/
+
+    position: absolute;
+    background: #535971;
+}
