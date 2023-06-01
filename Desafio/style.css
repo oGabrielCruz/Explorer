@@ -44,7 +44,7 @@ header{
 }
 
 form{
-    background: #bbb6b6;
+    background: #aaaaaa;
 
     position: absolute;
     width: 750px;
@@ -70,7 +70,7 @@ fieldset{
     border: none;
 }
 
-.info-pessoas input{
+.info-pessoas input, .col-2 input{
     width: 622px;
     height: 56px;
     box-sizing: border-box;
@@ -80,12 +80,27 @@ fieldset{
     border-radius: 8px;
 }
 
-.info-pessoas label{
+.info-pessoas label, .col-2 label{
     display: flex;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 50px;
+}
+
+.linha{
+    width: 622px;
+    border: 1px solid #E6E6F0;
+}
+
+span{
+    color: #C1BCCC;
+}
+
+.col-2{
+    display: flex;
+    
+
 }
