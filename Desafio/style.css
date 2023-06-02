@@ -50,7 +50,7 @@ header{
 form{
     background: #aaaaaa;
 
-    position: absolute;
+    align-items: center;
     width: auto;
     height: auto;
     top: 300px;
@@ -58,7 +58,41 @@ form{
     min-height: 750px;
     border-radius: 20px 20px 0px 0px;
     
-    padding: 64px;
+    padding: 64px 64px 64px 50px;
+}
+
+.fundo-botao{
+        background: #535971;
+    
+        align-items: center;
+        width: auto;
+        height: 120px;
+        top: 300px;
+    
+        border-radius: 0px 0px 20px 20px;
+        
+}
+
+.botao{
+    padding-top: 35px;
+    margin: 0px;
+    text-align: center;
+    
+}
+.botao input{
+    height: 55px;
+    width: 600px;
+
+    color: #ffffff;
+    background: #FF5374;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+.botao input:hover{
+    background: #8d2c3f;
+    
 }
 
 legend{
@@ -72,6 +106,7 @@ legend{
 
 fieldset{
     border: none;
+    margin: auto;
 }
 
 .info-pessoas input, .col-2 input, .col-3 input{
