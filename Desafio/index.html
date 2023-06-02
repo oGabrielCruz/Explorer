@@ -28,13 +28,14 @@
 
             <fieldset>
                 <div class="col-2">
-                    <label for="nome-pessoa">Nome</label>
-                    <input type="text" id="nome-pessoa">
-                </div>
-
-                <div class="col-2">
-                    <label for="sobrenome-pessoa">Sobrenome</label>
-                    <input type="text" id="sobrenome-pessoa">
+                    <div class="info-pessoas">
+                        <label for="nome-pessoa">Nome</label>
+                        <input type="text" id="nome-pessoa">
+                    </div>
+                    <div class="info-pessoas">
+                        <label for="sobrenome-pessoa">Sobrenome</label>
+                        <input type="text" id="sobrenome-pessoa">
+                    </div>
                 </div>
 
                 <div class="info-pessoas">
@@ -46,8 +47,77 @@
                     <label for="senha-pessoa">Senha <span>(minimo 6 caracterias)</span></label>
                     <input type="password" id="senha-pessoa" required minlength="6">
                 </div>
+
+
             </fieldset>
+
+            <legend>Informaçoes do Mentor</legend>
+            <div class="linha"></div>   
+
+            <fieldset>
+                <div class="info-pessoas">
+                    <label for="info-mentor">Nome do seu mentor<span>(só primeiro nome)</span></label>
+                    <input type="text" id="info-mentor">
+                </div>
+            </fieldset>
+
+            <legend>Seus Horários Disponíveis</legend>  
+            <div class="linha"></div>
+            <legend>PRIMEIRA MENTORIA</legend>
+            <fieldset>
+                <div class="col-3">
+
+                    <div class="info-pessoas">
+                        <label for="event-data">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="event-data">
+                    </div>
+    
+                    <div class="info-pessoas">
+                        <div class="tempo">
+                            <label for="event-begin">Das</label>
+                            <input type="time" id="event-begin">
+                        </div>
+                    </div>
+
+                    <div class="info-pessoas">
+                        <div class="tempo">
+                            <label for="event-end">Até</label>
+                            <input type="time" id="event-end">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+                <legend>SEGUNDA MENTORIA</legend>
+            <fieldset>
+            <div class="col-3">
+
+                <div class="info-pessoas">
+                    <label for="event-data">Data <span>(DD/MM/AAAA)</span></label>
+                    <input type="date" id="event-data">
+                </div>
+
+                <div class="info-pessoas">
+                    <div class="tempo">
+                        <label for="event-begin">Das</label>
+                        <input type="time" id="event-begin">
+                    </div>
+                </div>
+
+                <div class="info-pessoas">
+                    <div class="tempo">
+                        <label for="event-end">Até</label>
+                        <input type="time" id="event-end">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="botao"> <p></p></div>
+
         </form>
+
+
     </div>
 </body>
 </html>
