@@ -11,6 +11,7 @@
     --bg-primary: hsl(var(--hue), 22% , 20%);
     --fc-primary: hsl(var(--hue), 0% , 100%);
     --fc-secundary:hsl(var(--hue), 50% , 80%);
+    --fc-secundary-dark:hsl(var(--hue), 100%, 11%, 1);
 
     font-size: 62.5%;
     --fs-body:1.6rem;
@@ -30,6 +31,18 @@ header{
     font-family: var(--ff-heading);
     text-align: center;
     margin: 10rem 0 8rem;
+
+    animation-name: topdown; /*Nome escolhido la embaixo para o keyframe*/
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /*Toda vez que acaba uma animação ela volta ao normal, mas com essa
+                                    propriedade, ele acaba na % que for escolhida*/
+    animation-delay: 200ms;
+    animation-iteration-count: infinite; /*Fica infinita a animação*/
+    animation-play-state: paused; /*Ela pausa quando o mouse sai de cima*/
+}
+
+header:hover{
+    animation-play-state: running; /*Para pegar quando coloca o mouse em cima*/
 }
 
 header p {
@@ -49,12 +62,80 @@ header h1{
     line-height: 4.8rem; 
 }
 
-.pege{
+main{
+    display: grid;
+    gap: 3.2rem;
+}
+
+.card img{
+    height: 41.6rem;
+    object-fit: cover;
+    
+    transition: all 400ms;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    opacity: 0.4;
+
+}
+
+.card{
     max-width: 33rem;
     margin: 0 auto;
+
+    position: relative; /*DEIXA CADA CARD SER UNICO*/
+}
+
+.card h2{
+    position: absolute;/*SÓ VAI FUNCIONAR SE TIVER O /\ DE POSITION RELATIVE*/
+    bottom: 5.2rem;
+    left: 2.8rem;
+
+    font-size: var(--ff-heading);
+    font-weight: 800;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+.card h2 span{
+    border-radius: 2rem;
+    background-color: var(--fc-primary);
+    font-size: var(--fs-body);
+    font-weight: 400;
+    color: var(--fc-secundary-dark);
+    padding: 0 1.6rem;
+    height: 3.8rem;
+    width:fit-content;/*Para não se ajustar junto com o tamanho do texto*/
+    font-family: var(--ff-heading);
+    
+    display: inline-flex; /*serve para o SPAN pegar o HEIGHT */
+    align-items: center;
 }
 
 img{
     width: 100%;
     height: auto;
+    border-radius: 0.6rem;
+}
+
+/*ANIMAÇÃO*/
+/*TOPDOWN, de cima para baixo*/
+@keyframes topdown {
+    0%{ /*Começo*/
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{ /*Fim*/
+        opacity: 0;
+        transform: translateY(0);
+    }
 }
