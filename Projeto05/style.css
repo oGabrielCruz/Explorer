@@ -32,13 +32,13 @@ header{
     text-align: center;
     margin: 10rem 0 8rem;
 
-    animation-name: topdown; /*Nome escolhido la embaixo para o keyframe*/
+    animation-name: topdown ; /*Nome escolhido la embaixo para o keyframe*/
     animation-duration: 1s;
     animation-fill-mode: forwards; /*Toda vez que acaba uma animação ela volta ao normal, mas com essa
                                     propriedade, ele acaba na % que for escolhida*/
     animation-delay: 200ms;
-    animation-iteration-count: infinite; /*Fica infinita a animação*/
-    animation-play-state: paused; /*Ela pausa quando o mouse sai de cima*/
+    /*animation-iteration-count: infinite; Fica infinita a animação*/
+    /*animation-play-state: paused; Ela pausa quando o mouse sai de cima*/
 }
 
 header:hover{
@@ -65,34 +65,42 @@ header h1{
 main{
     display: grid;
     gap: 3.2rem;
+
+    animation: downtop 700ms reverse backwards;/*Esse backwards tira o "bug" da imagem piscar quando reseta a pagina*/
+    animation-delay: 200ms;
+
 }
 
-.card img{
-    height: 41.6rem;
-    object-fit: cover;
+
+.page .card img{
+    max-height: 41.6rem;
+    /* width: 100%; */
+    height: 100%;
     
     transition: all 400ms;
-}
+    object-fit: cover;
+    border-radius: 0.6rem;
+    }
 
-.card img:hover{
+
+.page .card img:hover{
     transform: scale(1.1);
     opacity: 0.4;
 
 }
 
-.card{
-    max-width: 33rem;
+.page .card{
     margin: 0 auto;
 
     position: relative; /*DEIXA CADA CARD SER UNICO*/
 }
 
-.card h2{
+.page .card h2{
     position: absolute;/*SÓ VAI FUNCIONAR SE TIVER O /\ DE POSITION RELATIVE*/
     bottom: 5.2rem;
     left: 2.8rem;
 
-    font-size: var(--ff-heading);
+    font-size: 4rem;
     font-weight: 800;
 
     display: flex;
@@ -101,7 +109,7 @@ main{
     
 }
 
-.card h2 span{
+.page .card h2 span{
     border-radius: 2rem;
     background-color: var(--fc-primary);
     font-size: var(--fs-body);
@@ -116,11 +124,44 @@ main{
     align-items: center;
 }
 
-img{
-    width: 100%;
-    height: auto;
-    border-radius: 0.6rem;
+.page{
+    max-width: 33rem;
+    margin: 0 auto;
 }
+
+@media(min-width: 700px){
+    :root{
+        --fs-heading: 5.6rem;
+    }
+    .page{
+        max-width: 117rem;
+        padding: 0 5rem;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 700px) {
+    main{
+        grid-template-areas: "A B"
+        "C D";
+}  
+     main div:nth-child(1){
+        grid-area: A;
+     }
+     main div:nth-child(2){
+        grid-area: B;
+     }
+     main div:nth-child(3){
+        grid-area: C;
+     }
+     main div:nth-child(4){
+        grid-area: D;
+     }
+    }
+
+
 
 /*ANIMAÇÃO*/
 /*TOPDOWN, de cima para baixo*/
@@ -130,12 +171,15 @@ img{
         transform: translateY(-15px);
     }
 
-    50%{
-        opacity: 1;
-    }
 
     100%{ /*Fim*/
-        opacity: 0;
+        opacity: 1;
         transform: translateY(0);
+    }
+}
+@keyframes downtop{
+    100%{
+        opacity: 0;
+        transform: translateY(15px);
     }
 }
