@@ -16,12 +16,18 @@ header{
     height:20.9rem;
 */
     background-color: var(--cor1);
+    color: var(--cor4);
     text-align: center;
-    animation: downtop 1s backwards;
+    
 }
 
 header h1{
     background-color: var(--cor3);
+    font-family: 'Staatliches', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 5rem;
 }
 
 img{
@@ -43,7 +49,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: downtop 1s backwards;
 }
 
 main img{
@@ -51,6 +56,7 @@ main img{
     height: 25.0rem;
     left: 32px;
     padding: 1rem;
+    animation: downtop 700ms backwards;
 
 }
 main p{
@@ -76,6 +82,8 @@ main p{
     background-color: var(--cor2);
     padding: 1rem;
     border-radius: 2rem;
+
+    animation: topdown 700ms backwards;
 }
 
 .cards-maior h2{
@@ -92,30 +100,33 @@ main p{
     background-color: var(--cor2);
     padding: 1rem;
     border-radius: 2rem;
+
+    animation: topdown 700ms backwards;
 }
 
 .cards-maior img{
     height: 35.0rem;
 }
 
-@keyframes topdown{
-    100%{
-        opacity:1;
-        transform: translateY(0);
-    }
+@keyframes topdown {
     0%{
-        opacity: 0;
-        transform: translateY(-15);
+        opacity: 0.5;
+        transform: translateY(-17px);
     }
-}
 
-@keyframes downtop{
     100%{
         opacity: 1;
-        transform: translateY(-15);
-    }
-    0%{
-        opacity: 0;
         transform: translateY(0);
     }
+}
+@keyframes downtop{
+    0%{
+        opacity: 0.5;
+        transform: translateY(5px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+}
 }
