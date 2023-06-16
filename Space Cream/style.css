@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -9,13 +10,14 @@
     --cor2: #8E9AAF;
     --cor3: #CBC0D3;
     --cor4: #FEEAFA;
+    --cor5: #FFFFFF;
 }
 
 header{
 /*    width:38.4rem;
     height:20.9rem;
 */
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     color: var(--cor4);
     text-align: center;
     
@@ -59,9 +61,11 @@ main img{
     animation: downtop 700ms backwards;
 
 }
-main p{
+header p{
     text-align: center;
     padding: 2rem;
+    background-color: var(--cor5);
+    color: var(--cor1);
 }
 
 .cards, .cards-maior{
@@ -129,4 +133,31 @@ main p{
         opacity: 1;
         transform: translateY(0);
 }
+}
+
+@media (min-width: 700px){
+        header{
+            position: absolute;
+            width: 37.7rem;
+            height: 72rem;
+            left: 0px;
+            top: 0px;
+
+            background:var(--cor2);
+        }
+        header p{
+            color: var(--cor4);
+            background-color: var(--cor2);
+            font-weight: 400;
+            font-size: 2.4rem;
+            line-height: 3.0rem;
+            align-items: center;
+            padding-top: 5rem;
+        }
+        main{
+            display: grid;
+            position: absolute;
+            grid-template-columns: 1fr 1fr;
+            right: 30%;
+        }
 }
