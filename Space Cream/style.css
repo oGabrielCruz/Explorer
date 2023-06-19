@@ -153,7 +153,7 @@ header p{
             opacity: 1;
         }
         footer p{
-            top: 90%;
+            top: 130%;
             left: 55%;
             position: absolute;
             color: var(--cor1);
