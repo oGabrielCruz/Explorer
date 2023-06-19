@@ -68,7 +68,7 @@ header p{
     color: var(--cor1);
 }
 
-.cards, .cards-maior{
+.cards{
     position: relative;
 }
 
@@ -90,26 +90,8 @@ header p{
     animation: topdown 700ms backwards;
 }
 
-.cards-maior h2{
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2.8rem;
-
-    color: var(--cor4);
-
-    background-color: var(--cor2);
-    padding: 1rem;
-    border-radius: 2rem;
-
-    animation: topdown 700ms backwards;
-}
-
-.cards-maior img{
-    height: 35.0rem;
+.oculto{
+    opacity: 0;
 }
 
 @keyframes topdown {
@@ -135,10 +117,10 @@ header p{
 }
 }
 
-@media (min-width: 700px){
+@media (min-width: 920px){
         header{
             position: absolute;
-            width: 37.7rem;
+            width: 30rem;
             height: 72rem;
             left: 0px;
             top: 0px;
@@ -156,8 +138,51 @@ header p{
         }
         main{
             display: grid;
-            position: absolute;
             grid-template-columns: 1fr 1fr;
-            right: 30%;
+            position: absolute;
+            left: 32%;
+            height: auto;
+            width: auto;
         }
+        main img, .cards{
+            width: 20.0rem;
+            height: auto;
+        }
+        
+        .oculto{
+            opacity: 1;
+        }
+        footer p{
+            top: 90%;
+            left: 55%;
+            position: absolute;
+            color: var(--cor1);
+        }  
+
+}
+@media(min-width: 920px){
+
+    main{
+        grid-template-areas: "A B B C"
+        "E D D F" 
+        ;
+}
+     main div:nth-child(1){
+        grid-area: A;
+     }
+     main div:nth-child(2){
+        grid-area: B;
+     }
+     main div:nth-child(3){
+        grid-area: C;
+     }
+     main div:nth-child(4){
+        grid-area: D;
+     }
+     main div:nth-child(5){
+        grid-area: E;
+     }
+     main div:nth-child(6){
+        grid-area: F;
+     }
 }
