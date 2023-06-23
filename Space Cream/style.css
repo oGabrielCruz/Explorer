@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root{
     font-size: 62.5%;
     --cor1: #5C6981;
@@ -121,20 +120,31 @@ header p{
         header{
             position: absolute;
             width: 30rem;
-            height: 72rem;
+            height: 44rem;
             left: 0px;
             top: 0px;
 
             background:var(--cor2);
         }
+        
+        footer{
+            /* position: relative; */
+            color: var(--cor1);
+            padding: 10px;
+            border: 1px solid black;
+            position: relative;
+            left: 95%;
+
+        }
+
         header p{
             color: var(--cor4);
             background-color: var(--cor2);
             font-weight: 400;
-            font-size: 2.4rem;
+            font-size: 2.3rem;
             line-height: 3.0rem;
             align-items: center;
-            padding-top: 5rem;
+            padding-top: 2rem;
         }
         main{
             display: grid;
@@ -152,40 +162,35 @@ header p{
         .oculto{
             opacity: 1;
         }
-        footer p{
-            top: 130%;
-            left: 55%;
-            position: absolute;
-            color: var(--cor1);
+
         }  
         .cards h2{
             display: none;
         }
-
-}
 @media(min-width: 920px){
-
     main{
-        grid-template-areas: "A B B C"
-        "E D D F" 
+        grid-template-areas: 
+        'A B C'
+        'D B E'
+        'D F E' 
         ;
 }
-     main div:nth-child(1){
+    main div:nth-child(1){
         grid-area: A;
      }
-     main div:nth-child(2){
+    main div:nth-child(2){
         grid-area: B;
      }
-     main div:nth-child(3){
+    main div:nth-child(3){
         grid-area: C;
      }
-     main div:nth-child(4){
+    main div:nth-child(4){
         grid-area: D;
      }
-     main div:nth-child(5){
+    main div:nth-child(5){
         grid-area: E;
      }
-     main div:nth-child(6){
+    main div:nth-child(6){
         grid-area: F;
      }
 }
