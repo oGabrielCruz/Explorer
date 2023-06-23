@@ -158,6 +158,9 @@ header p{
             position: absolute;
             color: var(--cor1);
         }  
+        .cards h2{
+            display: none;
+        }
 
 }
 @media(min-width: 920px){
