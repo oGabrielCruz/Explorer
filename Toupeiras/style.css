@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(imagens/fundo.svg);
+    width: 100%;
+}
+
+main{
+    padding-top: 15rem;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    text-align: center;
+    position: relative;
+    /* z-index: -1; */
+}
+.buraco-topeira1{
+    background-image: url(imagens/toupeira6.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    
+    animation: downtop 1s backwards ;
+    animation-delay: 1s;
+}
+.buraco-topeira1:hover{
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+}
+.buraco-topeira2{
+    background-image: url(imagens/toupeira6.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    
+    animation: downtop 1s backwards;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 2s;
+}
+
+.buraco-topeira2:hover{
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+}
+
+.buraco-topeira3{
+    background-image: url(imagens/toupeira6.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    
+    animation: downtop 1s backwards;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 3s;
+}
+.buraco-topeira3:hover{
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+}
+@keyframes downtop{
+    20%{
+        background-image: url(imagens/toupeira1.svg);
+    }
+    40%{
+        background-image: url(imagens/toupeira2.svg);
+    }
+    60%{
+        background-image: url(imagens/toupeira3.svg);
+    }
+    80%{
+        background-image: url(imagens/toupeira4.svg);
+    }
+    100%{
+        background-image: url(imagens/toupeira5.svg);
+    }
+}
