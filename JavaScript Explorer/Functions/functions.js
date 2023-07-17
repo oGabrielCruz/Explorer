@@ -1,1 +1,7 @@
-//Function scope
+//function hoinsting
+
+sayMyName()
+
+function sayMyName(){
+    console.log('Biel')
+}

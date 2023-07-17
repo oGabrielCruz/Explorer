@@ -61,3 +61,24 @@ function fazerSuco (fruta1, fruta2){
 
 const copo = fazerSuco('banana ', 'maçã')
 console.log(copo)
+
+
+
+//Function scope
+let subject = 'create video'
+function  createThink(subject){
+    subject = 'study'
+    return subject
+}
+console.log(createThink(subject))
+console.log(subject)
+
+
+
+//function hoinsting
+
+sayMyName()
+
+function sayMyName(){
+    console.log('Biel')
+}
