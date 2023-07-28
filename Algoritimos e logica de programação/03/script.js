@@ -9,12 +9,13 @@
 
     Em ambos os casos, mostre uma mensagem com o nome do aluno e a nota
 */
-let aluno = prompt('Qual é o nome do aluno? ')
+let aluno = prompt('Qual é o nome(a) do aluno(a)? ')
 let notaUm = Number(prompt('Nota 1:'))
 let notaDois =  Number(prompt('Nota 2:'))
 let notaTres = Number(prompt('Nota 3:'))
 notaFinal = (notaUm + notaDois + notaTres) / 3
 result =  notaFinal > 6
+result = result.toFixed(2)
 if(result){
     alert(aluno + " passou de ano, parabéns, sua media foi " + notaFinal)
 }
