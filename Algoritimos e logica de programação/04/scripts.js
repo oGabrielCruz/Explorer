@@ -5,7 +5,7 @@
 */
 
 let items = [] //array
-
+// teste commit
 for (let item = 0; item < 10; item++ ){
     let lista = prompt("Digite o item " + (item + 1))
     items[item] = lista
