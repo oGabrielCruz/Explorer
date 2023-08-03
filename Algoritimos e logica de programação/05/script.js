@@ -16,18 +16,37 @@
 
     Substitua o "x" da mensagem, pelo número de tentativas
 */
-const aleatorio = Math.floor(Math.random() * 11)
-console.log(aleatorio)
-let result = undefined
 
-for (let tentativas = 0; aleatorio != result; tentativas++ ){
-    result = Number(prompt("Adivinhe o número que estou pensando? Está entre 0 e 10"))
-    if(aleatorio == result){
-        alert("Parabéns, Você acertou em " + tentativas + " Tentativas")
-    }
 
-    else{     
-    alert("Tente novamente")
-    }
-}
+// const aleatorio = Math.floor(Math.random() * 11)
+// console.log(aleatorio)
+// let result = undefined
+
+// for (let tentativas = 1; aleatorio != result; tentativas++ ){
+//     result = Number(prompt("Adivinhe o número que estou pensando? Está entre 0 e 10"))
+//     if(aleatorio == result){
+//         alert("Parabéns, Você acertou em " + tentativas + " Tentativas")
+//     }
+
+//     else{     
+//     alert("Tente novamente")
+//     }
+// }
     
+
+
+//OR
+
+
+
+ let result = prompt("Adivinhe o número que estou pensando? Está entre 0 e 10")
+ const randomNumber = Math.round(Math.random() * 10)
+ console.log(randomNumber)
+
+let xAttempts = 1
+
+while(result != randomNumber){
+    result= prompt("Você errou! Tente novamente")
+    xAttempts++
+}
+alert(`Parabéns! Você acertou em ${xAttempts} tentativas`)
