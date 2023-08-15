@@ -17,29 +17,48 @@
     Caso o usuário digite 3, a aplicação deverá ser encerrada.
 
 */
-let opc;
-let item= []
-let index=0;
+let opc
+let items = []
+// let index=0;
 while(opc != 3 ){
     opc = Number(prompt(`
         1- Cadastre um item novo
         2- Ver os items cadastrados
         3- Sair
 
-        Olá usuário! Digite o número da opção desejada: 
-    `
-)
-    )
+        Olá! Digite o número da opção desejada: `))
 
-    if(opc == 1){
-        item[index] = prompt("Cadastre um item: ")
-        index++
-    }
+    switch(opc){
+        case 1:
+            let item = prompt("Cadastre um item: ")
+            items.push(item)
+            break
+        case 2:
+            if(items.length == 0){
+                alert("Você não colocou nenhuma informação")
+            }
+            else{ (alert(items + " está na lista"))
+            }
+            break
+        case 3:
+            alert('Tchau')
+            break
+        default:
+            alert("Opção invalida")
 
-    else if(opc == 2){
-        if(item.length == 0){
-            alert("Você não colocou nenhuma informação")
         }
-        else (alert(item + " está na lista"))
-    }
-    }
+}
+
+
+    // if(opc == 1){
+    //     item[index] = prompt("Cadastre um item: ")
+    //     index++
+    // }
+
+    // else if(opc == 2){
+    //     if(item.length == 0){
+    //         alert("Você não colocou nenhuma informação")
+    //     }
+    //     else (alert(item + " está na lista"))
+    // }
+    // }
