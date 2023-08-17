@@ -17,10 +17,15 @@
     Caso o usuário digite 3, a aplicação deverá ser encerrada.
 
 */
+
+const NOVO_ITEM = 1
+const VER_ITEM = 2
+const SAIR = 3
+
 let opc
 let items = []
 // let index=0;
-while(opc != 3 ){
+while(opc != SAIR){
     opc = Number(prompt(`
         1- Cadastre um item novo
         2- Ver os items cadastrados
@@ -29,18 +34,18 @@ while(opc != 3 ){
         Olá! Digite o número da opção desejada: `))
 
     switch(opc){
-        case 1:
+        case NOVO_ITEM:
             let item = prompt("Cadastre um item: ")
             items.push(item)
             break
-        case 2:
+        case VER_ITEM:
             if(items.length == 0){
                 alert("Você não colocou nenhuma informação")
             }
             else{ (alert(items + " está na lista"))
             }
             break
-        case 3:
+        case SAIR:
             alert('Tchau')
             break
         default:
