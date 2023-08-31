@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+head{
+    display: flex;
+}
+
+img{
+    width: 720px;
+    height: 730px;
+}
+
+h1{
+    color: #B52184;
+    font-weight: bolder;
+}
