@@ -3,16 +3,39 @@
     padding: 0px;
 }
 
-head{
-    display: flex;
+.astro img{
+    width: 520px;
+    height: 530px;
+    text-align: end;
 }
-
-img{
-    width: 720px;
-    height: 730px;
-}
-
 h1{
     color: #B52184;
     font-weight: bolder;
 }
+
+.text{
+    float: left;
+    padding: 220px;
+}
+
+.seta{
+    padding-left: 220px;
+    padding-right: 50px;
+}
+
+main{
+    background-color: #312D64;
+    padding: 30px;
+    text-align: center;
+}
+.card {
+    width: 366px;
+    height: 448px;
+
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+  }
