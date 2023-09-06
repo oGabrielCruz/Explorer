@@ -4,22 +4,23 @@
 }
 
 .astro img{
-    width: 520px;
-    height: 530px;
+    width: 540px;
+    height: 560px;
     text-align: end;
 }
 h1{
     color: #B52184;
     font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .text{
     float: left;
-    padding: 220px;
+    padding: 180px;
 }
 
 .seta{
-    padding-left: 220px;
+    padding-left: 180px;
     padding-right: 50px;
 }
 
@@ -29,13 +30,34 @@ main{
     text-align: center;
 }
 .card {
+    vertical-align: top;
+    text-align: left;
+
     width: 366px;
     height: 448px;
 
-    padding: 10px;
+    padding: 15px;
     background-color: #f1f1f1;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 25px;
     margin-right: 10px;
     display: inline-block;
-  }
+}
+
+.card h2{
+    color: #B52184;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card p{
+    color: #312D64;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+input{
+    padding: 10px;
+    width: 500px;
+    height: 50px;
+    border-radius: 15px;
+}
