@@ -61,3 +61,14 @@ input{
     height: 50px;
     border-radius: 15px;
 }
+
+button{
+    margin: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #312D64;
+    color: white;
+}
+button:hover{
+    background-color: #B52184;
+}
