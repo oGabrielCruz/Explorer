@@ -14,6 +14,12 @@ function botaoTentativa(event){
 
         
     }
+    if(Number(inputNumero.value) > 10){
+        alert("O numero não pode ser maior que 10")
+    }
+    if(Number(inputNumero.value < 0)){
+        alert("O numero não pode ser menor que 0")
+    }
     inputNumero.value= ""
     xAttempts ++
 }
