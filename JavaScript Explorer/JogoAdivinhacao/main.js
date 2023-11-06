@@ -1,4 +1,4 @@
-const randomNumber= Math.round(Math.random() * 10 )
+let randomNumber= Math.round(Math.random() * 10 )
 let xAttempts = 1
 
 function botaoTentativa(event){
@@ -14,5 +14,17 @@ function botaoTentativa(event){
 
         
     }
+    inputNumero.value= ""
     xAttempts ++
+}
+
+function botaoNovamente(event){
+    event.preventDefault()
+
+    document.querySelector(".tela2").classList.add("hide")
+    document.querySelector(".tela1").classList.remove("hide")
+
+    randomNumber=Math.round(Math.random() * 10 )
+    xAttempts = 1
+    
 }
