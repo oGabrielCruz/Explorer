@@ -1,4 +1,4 @@
-from turtle import Turtle
+from turtle import Turtle ,  Screen
 
 t = Turtle()
 def esquerda():
@@ -16,6 +16,13 @@ def baixo():
 def cima():
     t.left(90)
     t.forward(100)
+
+screen = Screen()
+screen.listen()
+screen.onkey(esquerda, "Left")
+screen.onkey(direita, "Right")
+screen.onkey(baixo, "Down")
+screen.onkey(cima, "Up")
 
 
 t.screen.mainloop()

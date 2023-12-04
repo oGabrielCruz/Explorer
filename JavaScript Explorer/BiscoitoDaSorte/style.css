@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: linear-gradient(to right ,blue, purple );
+}
+
+main{
+    padding: 10px;
+    background: white;
+    width: 428px;
+    height:408px;
+    margin: 0 auto;
+    margin-top: 200px;
+    border-radius: 10px;
+}
+
+main h1,p{
+    
+    color: black;   
+    text-align: center;
+}
+
+button,svg{
+    width:300px;
+    height: 300px;
+}
+button{
+    margin: 20px 60px;
+    background:  transparent;
+    border: none;
+}
+
+.hide{
+    display: none;
+}
+
+.tela2 button{
+    width: 160px;
+    height: 10px;
+    background-color: orange;
+    border: turquoise;
+    margin: 15px 140px;
+    padding: 10px 10px 20px 10px;
+    color: white;
+    
+}
+.tela2 svg{
+    margin: 0px 65px;
+}
