@@ -1,0 +1,23 @@
+body{
+    background: black ;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+.botoes{
+    background: #242424;
+    display: flex;
+    padding: 2rem;
+    border-radius: 6rem;
+    width: 22rem;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30rem;
+}
+
+button{
+    border: none;   
+    background: #242424;
+}
