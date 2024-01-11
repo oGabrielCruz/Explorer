@@ -17,4 +17,4 @@ function calcularIMC() {
 }
 
 var botaoCalcular = document.getElementById("botao-calcular");
-botaoCalcular.addEventListener("click", calcularIMC);
+botaoCalcular.addEventListener("click", calcularIMC );
