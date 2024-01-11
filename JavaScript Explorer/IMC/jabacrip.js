@@ -1,4 +1,3 @@
-// calcular o IMC peso / (altura*altura)
 function calcularIMC() {
     var pesoInput = document.getElementById("peso");
     var alturaInput = document.getElementById("altura");
