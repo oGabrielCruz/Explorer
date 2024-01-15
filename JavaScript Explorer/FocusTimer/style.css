@@ -14,10 +14,17 @@ body{
     width: 22rem;
     align-items: center;
     margin: 0 auto;
-    margin-top: 30rem;
 }
 
 button{
     border: none;   
     background: #242424;
+}
+
+h1{
+    color: blue;
+    font-size: 7rem;
+    display: flex;
+    margin-left: 57rem;
+    margin-top: 15rem;
 }
