@@ -1,0 +1,30 @@
+body{
+    background: black ;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+.botoes{
+    background: #242424;
+    display: flex;
+    padding: 2rem;
+    border-radius: 6rem;
+    width: 22rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+button{
+    border: none;   
+    background: #242424;
+}
+
+h1{
+    color: blue;
+    font-size: 7rem;
+    display: flex;
+    margin-left: 57rem;
+    margin-top: 15rem;
+}
