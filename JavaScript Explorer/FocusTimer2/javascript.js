@@ -25,6 +25,10 @@ function tema() {
 }
 
 
+function adiociona(){
+    min++
+    document.getElementById('timer').innerText=doisDigitos(min)+':'+doisDigitos(sec)
+}
 function startOrStop(){
     console.log(interval)
     if(interval > 0){
