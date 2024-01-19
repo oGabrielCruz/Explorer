@@ -28,6 +28,10 @@ function tema() {
 function timerOrStop(){
     min++
     document.getElementById('timer').innerText=doisDigitos(min)+':'+doisDigitos(sec)
+    clearInterval(interval)
+    min=0
+    sec=0
+    document.getElementById('timer').innerText='00:00'
 }
 
 function startOrPause(){
@@ -55,12 +59,12 @@ function startOrPause(){
     // iniciar ou parar o timer
     
 }
-function parar(){
-    clearInterval(interval)
-    min=0
-    sec=0
-    document.getElementById('timer').innerText='00:00'
-}
+// function parar(){
+//     clearInterval(interval)
+//     min=0
+//     sec=0
+//     document.getElementById('timer').innerText='00:00'
+// }
 
 
 
