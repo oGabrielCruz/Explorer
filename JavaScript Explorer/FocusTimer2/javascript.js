@@ -1,7 +1,8 @@
 var sec=60
-var min=1
+var min=0
 var interval=0
 var audio = document.getElementById('meu-audio')
+var audioFim= document.getElementById('audio-fim')
 var musicaTocando = false
 
 
@@ -88,6 +89,7 @@ function timer(){
     if(min == -1 ){
         startOrPause()
         document.getElementById('timer').innerText='00:00'
+        audioFim.play()
     }
 }
 
