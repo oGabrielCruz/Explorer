@@ -1,4 +1,4 @@
-var sec=60
+var sec=0
 var min=0
 var interval=0
 var audio = document.getElementById('meu-audio')
@@ -33,16 +33,7 @@ function timerOrStop(){
     min++
     document.getElementById('timer').innerText=doisDigitos(min)+':'+doisDigitos(sec)
     clearInterval(interval) 
-
 }
-// function timerOrStop(){
-//     min++
-//     document.getElementById('timer').innerText=doisDigitos(min)+':'+doisDigitos(sec)
-//     clearInterval(interval)
-//     min=0
-//     sec=0
-//     document.getElementById('timer').innerText='00:00'
-// }
 
 
 function startOrPause(){
@@ -70,27 +61,22 @@ function startOrPause(){
     // iniciar ou parar o timer
     
 }
-// function parar(){
-//     clearInterval(interval)
-//     min=0
-//     sec=0
-//     document.getElementById('timer').innerText='00:00'
-// }
+
 
 
 
 function timer(){
-    sec--
-    document.getElementById('timer').innerText=doisDigitos(min)+':'+doisDigitos(sec)
-    if(sec==0){
+    if(sec === 0 && min > 0){
         min--
-        sec=60
-    }
-    if(min == -1 ){
+        sec=59
+    } else if (min === 0 && sec === 0){
         startOrPause()
         document.getElementById('timer').innerText='00:00'
         audioFim.play()
+    } else {
+        sec--
     }
+    document.getElementById('timer').innerText=doisDigitos(min)+':'+doisDigitos(sec)
 }
 
 function doisDigitos(digito){
